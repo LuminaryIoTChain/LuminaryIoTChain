@@ -1,7 +1,14 @@
+import { ConfigProvider } from "antd";
+import zhCN from "antd/locale/zh_CN";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider, useAuth } from "./lib/auth-context";
+
+// 生态统一主题（见 LuminaryWorks/shared/brand/ant-theme.ts）
+const luminaryAntTheme = {
+  token: { colorPrimary: "#1677ff", colorError: "#ea3636", borderRadius: 8 },
+};
 import { AuthCallbackPage } from "./pages/AuthCallbackPage";
 import { ConsolePage } from "./pages/ConsolePage";
 import { LoginPage } from "./pages/LoginPage";
@@ -35,8 +42,10 @@ function App() {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <AuthProvider>
-      <App />
-    </AuthProvider>
+    <ConfigProvider locale={zhCN} theme={luminaryAntTheme}>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </ConfigProvider>
   </StrictMode>,
 );

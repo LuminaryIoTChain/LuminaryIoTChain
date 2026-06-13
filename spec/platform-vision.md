@@ -1,6 +1,6 @@
-# LuminaryIoTChain 平台愿景 (v1.0)
+# SyncroBrain 平台愿景 (v1.0)
 
-> **组织**：[github.com/LuminaryIoTChain](https://github.com/LuminaryIoTChain)  
+> **品牌**：[SyncroBrain](https://syncrobrain.com) · **组织**：[github.com/syncrobrain](https://github.com/syncrobrain)（原 LuminaryIoTChain）  
 > **定位**：开源、轻量化、AI 驱动的 IoT PaaS — 参考涂鸦生态模式，以更低成本与更强 AI 能力服务硬件厂商。
 
 ## 1. 我们要解决什么
@@ -13,32 +13,32 @@
 
 ## 2. 与涂鸦（Tuya）的差异
 
-| 维度 | 涂鸦 | LuminaryIoTChain |
-|------|------|------------------|
+| 维度 | 涂鸦 | SyncroBrain |
+|------|------|-------------|
 | 商业模式 | 闭源 SaaS，按设备/流量收费 | **开源可私有化**，部署与许可成本更低 |
 | 能力边界 | 以设备管理、场景联动为主 | **AI 驱动**：推理、Agent、链上交易、数据洞察 |
-| 开发者生态 | 涂鸦开发者平台 | **BlockyEdu / VibeEdu** AI 辅助接入与实验课程 |
+| 开发者生态 | 涂鸦开发者平台 | **BlockyEdu** AI 辅助接入与实验课程 |
 | 数据可视化 | 内置面板 | **DataLuminary DataTalk** 专业 BI 大屏 |
 | 远程运维 | 有限 | **VistaRemote** WebRTC 远程桌面 |
-| 变现 | 平台抽成 | 设备可接入 **VibeAgent** 区块链 AI 服务市场，设备侧亦可参与链上收益 |
+| 变现 | 平台抽成 | 设备可接入 **DoerFlow** 任务网络，设备侧亦可参与链上收益 |
 
 ## 3. 三大差异化能力
 
 ### 3.1 接入快 — BlockyEdu 赋能工程师
 
-- VibeEdu 提供 ESPHome / MQTT / ThingsBoard 实验课程与 AI 辅导
+- BlockyEdu 提供 ESPHome / MQTT / ThingsBoard 实验课程与 AI 辅导
 - 厂商工程师通过 code-app-web 快速完成固件模板与协议对接
 - 降低从「硬件样品」到「云端在线」的时间
 
 ### 3.2 AI 服务 — 不止设备管理
 
 - DataLuminary：时序分析、异常检测、可视化大屏
-- VibeAgent：视觉识别、控制 Agent 订阅与链上结算
+- DoerFlow：视觉识别、控制 Agent 订阅与链上结算
 - 设备遥测 → AI 推理 → 规则/automation 闭环
 
 ### 3.3 区块链交易平台 — 设备也能赚钱
 
-- 设备可将算力/数据/Agent 能力注册到 VibeAgent 市场
+- 设备可将算力/数据/Agent 能力注册到 DoerFlow 网络
 - 用户购买 AI 服务；设备拥有者可获得链上分成
 - LuminaryIoTChain 编排身份（Logto `sub`）与设备 ID 的映射
 
@@ -49,9 +49,10 @@
                          │
                          ├── ThingsBoard CE（设备影子、规则、多租户）
                          ├── DataLuminary DataTalk（图表 / 大屏）
-                         ├── VibeAgent（AI 服务 / 链上交易）
-                         ├── VibeEdu（开发者接入）
-                         └── VistaRemote（远程运维）
+                         ├── DoerFlow（AI 服务 / 链上交易）
+                         ├── BlockyEdu（开发者接入）
+                         ├── VistaRemote（远程桌面运维）
+                         └── VistaCast（摄像头 AI，规划）
 ```
 
 ## 5. 开源与收费策略（原则）

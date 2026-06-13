@@ -1,8 +1,12 @@
-# LuminaryIoTChain
+<p align="center">
+  <img src="assets/logo.png" alt="SyncroBrain" width="128" />
+</p>
+
+<h1 align="center">SyncroBrain · 万物智脑</h1>
 
 开源、轻量化、**AI 驱动**的 IoT PaaS 平台 — 参考涂鸦生态，以更低成本为硬件厂商提供即插即用的云平台、App 与 AI 服务。
 
-> **组织**：[github.com/LuminaryIoTChain](https://github.com/LuminaryIoTChain)  
+> **品牌**：[syncrobrain.com](https://syncrobrain.com) · **组织**：[github.com/syncrobrain](https://github.com/syncrobrain)（原 LuminaryIoTChain）  
 > **核心链路**：设备（端）→ MQTT（管道）→ 物联网平台（大脑）→ 终端 App（展示）
 
 ## 解决什么问题
@@ -12,12 +16,12 @@
 | 硬件厂商缺乏 IoT 能力 | 开源 PaaS + App 模板，无需自建底层 |
 | 生态碎片化 | 统一 MQTT + ThingsBoard 多租户 |
 | 国际化难 | 多语言、多区域部署架构 |
-| 涂鸦仅设备管理 | **AI 推理 + VibeAgent 链上交易 + DataTalk 大屏** |
-| 接入门槛高 | **VibeEdu / BlockyEdu** AI 辅助工程师快速对接 |
+| 涂鸦仅设备管理 | **AI 推理 + DoerFlow 链上交易 + DataTalk 大屏** |
+| 接入门槛高 | **BlockyEdu** AI 辅助工程师快速对接 |
 
 详见 [`spec/platform-vision.md`](./spec/platform-vision.md) · [`spec/architecture.md`](./spec/architecture.md) · [`spec/ecosystem.md`](./spec/ecosystem.md)
 
-> **LuminaryWorks**：[五产品 AI 生态叙事](https://github.com/LuminaryWorks/LuminaryWorks/blob/main/docs/ecosystem-narrative.md)
+> **LuminaryWorks**：[域名与品牌决策](https://github.com/LuminaryWorks/LuminaryWorks/blob/main/spec/domain-and-branding.md)
 
 ## 四层架构
 
@@ -31,7 +35,7 @@
 ## 仓库结构
 
 ```text
-LuminaryIoTChain/              # MetaRepo（私有；拆解中）
+LuminaryIoTChain/              # MetaRepo（本地目录名；目标 syncrobrain/platform）
 ├── spec/                      # 工程规格
 ├── plan/                      # 里程碑 + repository-split.md
 ├── playbooks/                 # 可见性策略
@@ -47,7 +51,7 @@ LuminaryIoTChain/              # MetaRepo（私有；拆解中）
 
 | 可见性 | 仓库 |
 |--------|------|
-| **Public**（规划） | `LuminaryIoTChain/docs` |
+| **Public**（规划） | `syncrobrain/docs` |
 | **Private** | MetaRepo、iot-gateway、iot-console-web、deploy |
 
 新人上手详见 [ONBOARDING.md](./ONBOARDING.md)。仓库拆解计划：[plan/repository-split.md](./plan/repository-split.md)。
@@ -80,10 +84,11 @@ Logto 注册 Application **iot-console-web**，Redirect: `http://localhost:5180/
 
 | 项目 | 在 IoT 场景的角色 |
 |------|------------------|
-| [DataLuminary](https://github.com/DataLuminary/DataLuminary-Platform) | DataTalk 图表 / AI 数据洞察 |
-| [VibeEdu](https://github.com/BlockyEdu/VibeEdu) | 工程师接入实验与 AI 辅导 |
-| [VibeAgent](https://github.com/AgentSkillMesh/VibeAgent) | AI 服务与链上交易平台 |
-| [VistaRemote](https://github.com/VistaRemote) | 设备远程运维 WebRTC |
+| [DataLuminary](https://github.com/dataluminary/platform) | DataTalk 图表 / AI 数据洞察 |
+| [BlockyEdu](https://github.com/blockyedu/platform) | 工程师接入实验与 AI 辅导 |
+| [DoerFlow](https://github.com/doerflow/platform) | AI 服务与链上任务网络 |
+| [VistaRemote](https://github.com/VistaRemote/vibeCode) | 设备远程桌面运维 |
+| [VistaCast](https://github.com/VistaCast/vistacast) | 摄像头 AI 告警（规划） |
 
 ## 文档
 
@@ -94,11 +99,3 @@ Logto 注册 Application **iot-console-web**，Redirect: `http://localhost:5180/
 | [spec/ecosystem.md](./spec/ecosystem.md) | 工程规格 — LuminaryWorks 角色 |
 | [docs/ecosystem.md](./docs/ecosystem.md) | **对外** — 生态说明 |
 | [plan/README.md](./plan/README.md) | 里程碑 |
-
-## LuminaryWorks
-
-五产品可独立、可组合。叙事主仓：[LuminaryWorks/LuminaryWorks](https://github.com/LuminaryWorks/LuminaryWorks)
-
-## 许可
-
-核心编排层 Apache-2.0（待补充）；ThingsBoard CE / EMQX 遵循各自开源协议。

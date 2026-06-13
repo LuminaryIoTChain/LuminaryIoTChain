@@ -1,5 +1,4 @@
 {
-  "root": false,
   "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "vcs": {
     "enabled": true,
@@ -17,13 +16,21 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "noForEach": "off"
+        "noForEach": "off",
+        "noStaticOnlyClass": "off",
+        "useLiteralKeys": "off",
+        "useOptionalChain": "off"
       },
       "correctness": {
         "noUnusedVariables": "warn"
       },
       "style": {
-        "noNonNullAssertion": "off"
+        "noNonNullAssertion": "off",
+        "useImportType": "off",
+        "noNamespace": "off",
+        "useNodejsImportProtocol": "off",
+        "noUnusedTemplateLiteral": "off",
+        "useTemplate": "off"
       },
       "suspicious": {
         "noExplicitAny": "off"
@@ -31,6 +38,9 @@
     }
   },
   "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
     "formatter": {
       "quoteStyle": "double",
       "jsxQuoteStyle": "double",
@@ -45,17 +55,14 @@
       "expand": "auto"
     }
   },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  },
   "files": {
-    "includes": [
-      "**",
-      "!**/node_modules",
-      "!**/dist",
-      "!**/coverage",
-      "!**/doc_build",
-      "!**/.rspress",
-      "!**/*.min.js",
-      "!**/pnpm-lock.yaml",
-      "!**/package-lock.json"
-    ]
+    "includes": ["**", "!dist/**", "!coverage/**", "!**/node_modules", "!**/pnpm-lock.yaml"]
   }
 }

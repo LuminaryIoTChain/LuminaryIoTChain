@@ -1,6 +1,6 @@
-# LuminaryIoTChain 规格索引
+# SyncroBrain 规格索引
 
-> 组织：[github.com/LuminaryIoTChain](https://github.com/LuminaryIoTChain)
+> **品牌**：[syncrobrain.com](https://syncrobrain.com) · **组织**：[github.com/syncrobrain](https://github.com/syncrobrain)
 
 | 文档 | 说明 |
 |------|------|
@@ -9,7 +9,7 @@
 | [ecosystem.md](./ecosystem.md) | LuminaryWorks 五产品生态角色 |
 | [../docs/ecosystem.md](../docs/ecosystem.md) | 对外生态说明 |
 | [device-domain.md](./device-domain.md) | 设备域模型与 API |
-| [../DataLuminary/DataLuminary-Platform/spec/luminary-iot-chain-overview.md](../DataLuminary/DataLuminary-Platform/spec/luminary-iot-chain-overview.md) | LuminaryWorks 生态总览 |
+| [LuminaryWorks/spec/products/syncrobrain.md](https://github.com/LuminaryWorks/LuminaryWorks/blob/main/spec/products/syncrobrain.md) | 生态层产品规划 |
 
 ## IoT 权限命名空间
 
@@ -21,5 +21,5 @@
 | `iot.rule:edit` | 规则编排 |
 | `iot.tenant:manage` | 租户管理 |
 | `iot.template:publish` | 模板市场上架 |
-| `iot.ai:subscribe` | 订阅 VibeAgent AI 服务 |
+| `iot.ai:subscribe` | 订阅 DoerFlow AI 服务 |
 | `iot.chain:earn` | 设备链上收益配置 |

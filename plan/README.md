@@ -12,7 +12,7 @@
 | **IoT-M1** | iot-gateway + iot-console-web + SSO | ✅ |
 | **IoT-M2** | MQTT presence POC（Mosquitto dev） | ✅ |
 | **IoT-M3** | EMQX + ThingsBoard CE 接入；DataTalk 嵌入 | 待开始 |
-| **IoT-M4** | VibeEdu 接入课程；VibeAgent / VistaRemote 集成 | 待开始 |
+| **IoT-M4** | BlockyEdu 接入课程；DoerFlow / VistaCast 集成 | 待开始 |
 | **IoT-M5** | ESPHome 模板、ClickHouse 遥测、Flutter App shell | 待开始 |
 
 ## 技术栈演进
@@ -28,7 +28,7 @@
 
 - LuminaryWorks 统一登录 UL-1～UL-5 ✅
 - Identity：`LuminaryWorks/identity` → `./bootstrap.sh`（见 `docs/development/unified-login.md`）
-- GitHub 组织：[LuminaryIoTChain](https://github.com/LuminaryIoTChain)
+- GitHub 组织：[syncrobrain](https://github.com/syncrobrain)（原 LuminaryIoTChain）
 
 ## LuminaryWorks 生态
 

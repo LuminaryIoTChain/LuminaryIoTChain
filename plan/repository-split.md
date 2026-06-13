@@ -58,8 +58,8 @@ LuminaryIoTChain/                 # MetaRepo（私有）
 ├── init.sh / init.ps1            # 拉取 iot-gateway、iot-console-web、docs
 ├── ONBOARDING.md
 └── services/                     # 本地开发占位（git clone 目标，不提交源码）
-    ├── iot-gateway/              # → github.com/LuminaryIoTChain/iot-gateway
-    └── iot-console-web/          # → github.com/LuminaryIoTChain/iot-console-web
+    ├── iot-gateway/              # → github.com/syncrobrain/iot-gateway
+    └── iot-console-web/          # → github.com/syncrobrain/iot-console-web
 ```
 
 ## 与统一登录 / PostgreSQL
